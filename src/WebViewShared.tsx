@@ -166,7 +166,7 @@ export const useWebViewLogic = ({
       if (onError) {
         onError(event);
       } else {
-        console.warn('Encountered an error loading page', event.nativeEvent);
+       // console.warn('Encountered an error loading page', event.nativeEvent);
       }
       onLoadEnd?.(event);
       if (event.isDefaultPrevented()) {
